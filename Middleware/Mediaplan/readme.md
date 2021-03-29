@@ -10,3 +10,7 @@ cat ~/.ssh/id_rsa.pub
 
 y después pegarlas en gitlab en https://gitlab.com/maindufeu/ktbo-bi/-/settings/repository#js-deploy-keys-settings
 
+
+después puede clonar este repositorio entero con 
+
+git clone git@gitlab.com:maindufeu/ktbo-bi.git
