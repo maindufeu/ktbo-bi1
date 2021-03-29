@@ -9,5 +9,11 @@ sudo yum groupinstall "Development Tools"
 ./configure
 sudo make install
 
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+
+pip3 install pandas
+pip3 install datetime
+
 sudo yum install git-all -y
 git --version
