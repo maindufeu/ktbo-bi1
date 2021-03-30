@@ -14,6 +14,7 @@ python3 get-pip.py
 
 pip3 install pandas
 pip3 install datetime
+pip3 install pydrive
 
 sudo yum install git-all -y
 git --version
