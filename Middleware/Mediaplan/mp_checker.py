@@ -49,7 +49,7 @@ def mp_validate():
                 filename = '2021' + (re.split('2021', filename)[1])
             df['filename'] = filename
             cols = df.columns
-            excelOutput = 'result/'+filename
+            excelOutput = f'result/{filename}.xlsx'
             df.to_excel(excelOutput, sheet_name= 'MEDIA PLAN', index = False, startrow = 10)
             print(excelOutput)
             valid_status = 0
