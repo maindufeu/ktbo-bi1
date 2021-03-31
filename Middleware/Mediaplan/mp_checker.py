@@ -44,6 +44,7 @@ def mp_validate():
                 print(f'El plan de medios {filename} tiene todas las columnas')
             else:
                 print('faltan columnas revise el archivo')
+                print('pito')
             if "2021" in filename:
                 filename = '2021' + (re.split('2021', i)[1])
             df['filename'] = filename
