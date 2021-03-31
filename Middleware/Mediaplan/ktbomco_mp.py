@@ -1,3 +1,4 @@
 import mp_checker as mp
 
-mp.mp_validate()
+if mp.mp_validate() == 0
+print('0 exit')
