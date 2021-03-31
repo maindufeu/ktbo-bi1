@@ -29,7 +29,7 @@ def mp_validate():
     pattern = '*.xlsx'
     valid_status = 1
     mandatory_columns = ['Campaign Initiative', 'Format Type', 'Buy Type', 'Agency', 'Client', 'Brand','Region', 'City','Temporality', 'Total Cost','KPI Units','Media Cost','KPI Cost Type','Vendor','Network / Site', 'Start Date (DD/MM/YYYY)', 'End Date (DD/MM/YYYY)']
-    for i in listOfFiles:
+    ktbo-bi
         filename = os.path.splitext(i)[0]
         if fnmatch.fnmatch(i, pattern):
             df = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
@@ -42,17 +42,18 @@ def mp_validate():
 
             if len(columns_to_add) < 1:
                 print(f'El plan de medios {filename} tiene todas las columnas')
+                valid_status = 0
             else:
                 print('faltan columnas revise el archivo')
                 print('pito')
             if "2021" in filename:
                 filename = '2021' + (re.split('2021', filename)[1])
-            df['filename'] = filename
+            df['Filename'] = filename
             cols = df.columns
             excelOutput = f'result/{filename}.xlsx'
             df.to_excel(excelOutput, sheet_name= 'MEDIA PLAN', index = False, startrow = 10)
             print(excelOutput)
-            valid_status = 0
+
 
     if valid_status == 0:
         print('el mediaplan contiene todos los parametros necesarios')
