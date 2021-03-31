@@ -50,7 +50,7 @@ def mp_validate():
             df['filename'] = filename
             cols = df.columns
             excelOutput = 'result/'+filename
-            df.to_excel(excelOutput)
+            df.to_excel(excelOutput, sheet_name= 'MEDIA PLAN', index = False, startrow = 10)
             print(excelOutput)
             valid_status = 0
 
