@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 import os
 import fnmatch
+import re
 
 parser = ConfigParser()
 #parser.read('config.cfg')
