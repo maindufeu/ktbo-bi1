@@ -29,7 +29,7 @@ def mp_validate():
     pattern = '*.xlsx'
     valid_status = 1
     mandatory_columns = ['Campaign Initiative', 'Format Type', 'Buy Type', 'Agency', 'Client', 'Brand','Region', 'City','Temporality', 'Total Cost','KPI Units','Media Cost','KPI Cost Type','Vendor','Network / Site', 'Start Date (DD/MM/YYYY)', 'End Date (DD/MM/YYYY)']
-    for file in listOfFiles:
+    for i in listOfFiles:
         filename = os.path.splitext(i)[0]
         if fnmatch.fnmatch(i, pattern):
             df = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
