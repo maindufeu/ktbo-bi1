@@ -21,7 +21,7 @@ def mail_checker(username,token):
     mp = []
     return(mp)
 
-def mp_validate(mp):
+def mp_validate():
     print('working on it')
     path = 'changes/'
     listOfFiles = os.listdir(path)
