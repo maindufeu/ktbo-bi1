@@ -27,15 +27,27 @@ def mp_validate():
     path = 'changes/'
     listOfFiles = os.listdir(path)
     pattern = '*.xlsx'
+    filename = os.path.splitext(i)[0]
     valid_status = 1
-    mandatory_columns = []
+    mandatory_columns = ['Campaign Initiative', 'Format Type', 'Buy Type', 'Agency', 'Client', 'Brand','Region', 'City','Temporality', 'Total Cost','KPI Units','Media Cost','KPI Cost Type','Vendor','Network / Site', 'Start Date (DD/MM/YYYY)', 'End Date (DD/MM/YYYY)']
     for i in listOfFiles:
         if fnmatch.fnmatch(i, pattern):
             df = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
-            filename = os.path.splitext(i)[0]
+            cols = df.columns
+            for i in mandatory_columns:
+                columns_to_add = []
+                if i not in cols:
+                    print('falta la columna: ' + i)
+                    columns_to_add.append(i)
+
+            if len(columns_to_add) < 1:
+                print(f'El plan de medios {filename} tiene todas las columnas')
+            else:
+                print('faltan columnas revise el archivo')
             if "2021" in filename:
                 filename = '2021' + (re.split('2021', i)[1])
             df['filename'] = filename
+            cols = df.columns
             excelOutput = 'result/'+filename
             df.to_excel(excelOutput)
             print(excelOutput)
