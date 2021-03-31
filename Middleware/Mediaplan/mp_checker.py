@@ -28,19 +28,19 @@ def mp_validate():
     listOfFiles = os.listdir(path)
     pattern = '*.xlsx'
     valid_status = 1
+    mandatory_columns = []
     for i in listOfFiles:
         if fnmatch.fnmatch(i, pattern):
             df = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
+            filename = os.path.splitext(i)[0]
+            if "2021" in filename:
+                filename = '2021' + (re.split('2021', i)[1])
+            df['filename'] = filename
+            excelOutput = 'result/'+filename
+            df.to_excel(excelOutput)
+            print(excelOutput)
+            valid_status = 0
 
-    filename = os.path.splitext(i)[0]
-    if "2021" in filename:
-        filename = '2021' + (re.split('2021', i)[1])
-    df['filename'] = filename
-    excelOutput = 'result/'+filename
-    df.to_excel(excelOutput)
-    print(excelOutput)
-    valid_status = 0
-    mandatory_columns = []
     if valid_status == 0:
         print('el mediaplan contiene todos los parametros necesarios')
     else:
