@@ -2,6 +2,8 @@ from configparser import ConfigParser
 import datetime as dt
 import pandas as pd
 import requests
+import os
+import fnmatch
 
 parser = ConfigParser()
 #parser.read('config.cfg')
@@ -21,7 +23,23 @@ def mail_checker(username,token):
 
 def mp_validate(mp):
     print('working on it')
+    path = 'changes/'
+    listOfFiles = os.listdir(path)
+    pattern = '*.xlsx'
     valid_status = 1
+    for i in listOfFiles:
+        if fnmatch.fnmatch(i, pattern):
+            df = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
+
+    filename = os.path.splitext(i)[0]
+    if "2021" in filename:
+        filename = '2021' + (re.split('2021', i)[1])
+    df['filename'] = filename
+    excelOutput = 'result/'+filename
+    df.to_excel(excelOutput)
+    print(excelOutput)
+    valid_status = 0
+    mandatory_columns = []
     if valid_status == 0:
         print('el mediaplan contiene todos los parametros necesarios')
     else:
