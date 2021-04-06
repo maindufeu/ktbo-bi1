@@ -27,8 +27,8 @@ for file in listFiles:
     dffile = pd.read_excel("%s"%file,None, engine = "openpyxl")
     dfkeys = dffile.keys()
     for i in dfkeys:
-        if re.match(i, "other campaigns", re.IGNORECASE)
-        sheetname = i
+        if re.match(i, "other campaigns", re.IGNORECASE):
+            sheetname = i
     print("Attempting......", file, "\n")
     dfBuffer = pd.read_excel("%s"%file, sheet_name=sheetname, engine="openpyxl")
     dfBuffer["File"] = file
