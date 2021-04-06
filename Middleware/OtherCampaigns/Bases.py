@@ -24,14 +24,19 @@ dfBuffer2 = pd.DataFrame()
 column_checker_list2 = pd.DataFrame()
 
 for file in listFiles:
+    dffile = pd.read_excel("%s"%file,None, engine = "openpyxl")
+    dfkeys = dffile.keys()
+    for i in dfkeys:
+        if re.match(i, "other campaigns" re.IGNORECASE)
+        sheetname = i
     print("Attempting......", file, "\n")
-    dfBuffer = pd.read_excel("%s"%file, sheet_name="Other campaigns", engine="openpyxl")
+    dfBuffer = pd.read_excel("%s"%file, sheet_name=sheetname, engine="openpyxl")
     dfBuffer["File"] = file
     column_checker_list = column_checker_list.append(pd.DataFrame({"Column Names": list(dfBuffer.columns), "File": file}))
     #print(dfBuffer[["End Date"]])
     inData = inData.append(dfBuffer, sort=False)
     print(file, "..... OK \n")
-    
+
 
 column_checker_list["Ocurrence"] = 1
 columns_vs_files = column_checker_list.pivot(index="File", columns="Column Names", values="Ocurrence")
@@ -44,7 +49,7 @@ for column in list(columns_vs_files.columns):
         print(column, " doesn't look like a valid column name... \n")
     if column in real_columns:
         ok_columns.append(column)
-        
+
 for file in listFiles:
     print(file)
     try:
@@ -53,12 +58,12 @@ for file in listFiles:
         column_checker_list2 = column_checker_list2.append(pd.DataFrame({"Column Names": list(dfBuffer2.columns), "File": file}))
         #print(dfBuffer[["End Date"]])
         inData2 = inData2.append(dfBuffer2, sort=False)
- 
+
 
         column_checker_list2["Ocurrence"] = 1
         columns_vs_files2 = column_checker_list2.pivot(index="File", columns="Column Names", values="Ocurrence")
         ok_columns = []
-        
+
         for column in list(columns_vs_files2.columns):
             missingInFiles =  list(columns_vs_files2.loc[columns_vs_files2[column].isnull()].index)
             if len(missingInFiles) > 0:
@@ -69,7 +74,7 @@ for file in listFiles:
                 ok_columns.append(column)
     except:
         pass
-inData = inData.append(inData2, sort=False)   
+inData = inData.append(inData2, sort=False)
 inData.to_csv("archivo_acumulado.csv", index=False)
 
 inData = inData.drop_duplicates()
