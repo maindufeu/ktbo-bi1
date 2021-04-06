@@ -1,0 +1,23 @@
+sftp>    cd uploads/mediaplan
+sftp>    lcd result
+sftp>    mput *.xlsx
+Uploading 2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx
+sftp>    bye
+sftp>    cd uploads/mediaplan
+sftp>    lcd result
+sftp>    mput *.xlsx
+Uploading 2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx
+Uploading 2021_ktbo_kube_Adverity_MediaplanCierre_Febrero-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_MediaplanCierre_Febrero-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx
+sftp>    bye
+sftp>    cd uploads/mediaplan
+sftp>    lcd result
+sftp>    mput *.xlsx
+Uploading 2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_AdverityExample_Mediaplan_Abril-Miami.xlsx
+Uploading 2021_ktbo_kube_Adverity_MediaplanCierre_Febrero-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_MediaplanCierre_Febrero-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx
+sftp>    bye
