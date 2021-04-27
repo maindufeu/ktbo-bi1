@@ -7,6 +7,7 @@ import re
 
 def mp_match(mediaplan, mediafacts):
     print('working on it')
+    valid_status = 0
     matched = 0
     mp_u = mediaplan['Campaign Name'].unique()
     mf_u = mediafacts['Campaign Name'].unique()
