@@ -30,7 +30,7 @@ for filename in glob.iglob(mp_path, recursive=True):
 mediafacts = pd.read_csv('Campaigns/adverity-export__2_.csv')
 
 #mediaplans = pd.concat([df['Campaign', 'Datasource'] for df in mp_frames], ignore_index=True)
-mediaplans =  pd.read_csv('Campaigns/adverity-export__3_.csv')
+mediaplans =  pd.read_csv('Mediaplan/mp_processed/adverity-export__3_.csv')
 
 print('Mediaplan')
 print(mediaplans)
