@@ -18,9 +18,4 @@ def mp_match(mediaplan, mediafacts):
     else:
         print('el mediaplan contiene errores')
     return campaigns_matched
-
-
-
-
-df1 = mp_validate()
-print(df1)
+    print(matchrate)
