@@ -21,7 +21,6 @@ def mp_match(mediaplan, mediafacts):
             print(f'falta {i} en los planes de medios')
     mp_len = len(mp_u)
     mf_len = len(mf_u)
-    matched_len = len(matched)
     matchrate = matched/mp_len
     if valid_status == 0:
         print('el match rate es de:')
