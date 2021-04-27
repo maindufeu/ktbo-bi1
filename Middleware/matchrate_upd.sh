@@ -12,3 +12,4 @@ rm Campaigns/youtube/*
 cd Campaigns
 ./sftp_download.#!/bin/sh
 python3 matchrate.py
+aws s3 cp unmatched.csv s3://testingmidktbo/unmatched.csv

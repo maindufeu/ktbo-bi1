@@ -30,7 +30,7 @@ for filename in glob.iglob(mp_path, recursive=True):
 mediafacts = pd.read_csv('Campaigns/adverity-export__2_.csv')
 
 #mediaplans = pd.concat([df['Campaign', 'Datasource'] for df in mp_frames], ignore_index=True)
-mediaplans =  pd.read_csv('Mediaplan/mp_processed/adverity-export__3_.csv')
+mediaplans =  pd.read_csv('Mediaplan/mp_processed/adverity-export__4_.csv')
 
 print('Mediaplan')
 print(mediaplans)
@@ -41,3 +41,7 @@ print(mediafacts)
 mr = match.mp_match(mediaplans, mediafacts)
 print('mr')
 print(mr)
+
+file = open('unmatched.csv', 'w+', newline ='')
+write = csv.writer(file)
+write.writerows(mr)
