@@ -29,3 +29,13 @@ for filename in glob.iglob(mp_path, recursive=True):
 mediafacts = pd.concat([df['Campaign', 'Datasource'] for df in frames], ignore_index=True)
 
 mediaplans = pd.concat([df['Campaign', 'Datasource'] for df in mp_frames], ignore_index=True)
+
+print('Mediaplan')
+print(mediaplans)
+
+print('Mediafacts')
+print(mediafacts)
+
+mr = match.mp_match
+print('mr')
+print(mr)
