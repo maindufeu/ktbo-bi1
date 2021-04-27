@@ -7,26 +7,17 @@ import re
 
 def mp_match(mediaplan, mediafacts):
     print('working on it')
-    
-    listOfFiles = os.listdir(path)
-    pattern = '*.xlsx'
-    valid_status = 1
-    for i in listOfFiles:
-        filename = os.path.splitext(i)[0]
-        if fnmatch.fnmatch(i, pattern):
-            mp = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
-            adv = pd.read_excel(f'{path}{i}', sheet_name = 'MEDIA PLAN', skiprows = 10)
-            excelOutput = f'result/{filename}.xlsx'
-            df.to_excel(excelOutput, sheet_name= 'MEDIA PLAN', index = False, startrow = 10)
-            print(excelOutput)
-
-
+    mp_len = len(mediaplan)
+    mf_len = len(mediafacts)
+    campaigns_matched = mediaplan.join(mediafacts,  how = left)
+    matched_len = len(campaigns_matched)
+    matchrate = matched_len/mp_len
     if valid_status == 0:
         print('el match rate es de:')
         print(matchrate)
     else:
         print('el mediaplan contiene errores')
-    return df
+    return campaigns_matched
 
 
 
