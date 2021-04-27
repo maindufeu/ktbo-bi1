@@ -31,10 +31,10 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
   mkdir sizmekco
 
   lcd google
-  get google/*
+  get google_ads/*
   lcd ..
-  rmdir google
-  mkdir google
+  rmdir google_ads
+  mkdir google_ads
 
   lcd youtube
   get youtube/*
