@@ -2,6 +2,7 @@ import glob
 import match
 import pandas as pd
 import os
+import csv
 import fnmatch
 
 path = 'Campaigns/**'
