@@ -48,6 +48,8 @@ def mp_validate():
                 print('pito')
             if "2021" in filename:
                 filename = '2021' + (re.split('2021', filename)[1])
+            if "Cierre" in filename:
+                filename = (re.split('Cierre', filename)[0])+(re.split('Cierre', filename)[1)
             df['Filename'] = filename
             cols = df.columns
             excelOutput = f'result/{filename}.xlsx'
