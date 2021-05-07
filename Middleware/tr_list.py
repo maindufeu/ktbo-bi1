@@ -50,5 +50,5 @@ with open('transformations.json', 'w') as fp:
     json.dump(t_dict, fp)
     subprocess.call('git add . >> log_transformations.log', shell=True)
     subprocess.call('git commit -m "trans" >> log_transformations.log', shell=True)
-    subprocess.call('git_push >> log_transformations.log', shell=True)
+    subprocess.call('git push >> log_transformations.log', shell=True)
     print("transformation updated")
