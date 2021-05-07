@@ -16,3 +16,4 @@ for i in datastreams_id:
 
     response = requests.request("POST", url, headers=headers, data=payload).json()
     print(response)
+    print(":V")
