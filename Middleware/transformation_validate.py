@@ -1,7 +1,7 @@
 import tr_list
 import json
 
-with open('transformations.json') as f:
+with open('Middleware/transformations.json') as f:
   oldtr = json.load(f)
 
 oldtr = str(oldtr)
