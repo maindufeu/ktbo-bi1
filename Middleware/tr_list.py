@@ -1,6 +1,7 @@
 import requests
 import json
 from pprint import pprint
+import subprocess
 
 ###Authorization
 url = "https://KTBO.datatap.adverity.com/api/transformer/"
