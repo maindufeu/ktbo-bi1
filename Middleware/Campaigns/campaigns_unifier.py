@@ -5,8 +5,8 @@ import fnmatch
 
 
 
-other = pd.read_excel("othercampaigns/acumulado_other.xlsx", usecols = ['Campaign'])
-twitter = pd.read_excel("twitter/acumulado_twitter.xlsx", usecols = ['Campaign'])
+other = pd.read_excel("Campaigns/othercampaigns/acumulado_other.xlsx", usecols = ['Campaign'])
+twitter = pd.read_excel("Campaigns/twitter/acumulado_twitter.xlsx", usecols = ['Campaign'])
 twitter = twitter['Campaign'].str.upper().str.strip(" ").unique().tolist()
 print("Twitter length:")
 print(len(twitter))
