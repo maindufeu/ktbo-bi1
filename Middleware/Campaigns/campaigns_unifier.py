@@ -55,6 +55,25 @@ for filename in glob.iglob(path, recursive=True):
                 print("fb")
                 print(len(facebook))
 ######
+fb = pd.DataFrame(facebook)
+fb = fb[0].unique().tolist()
+len(fb)
+
+go = pd.DataFrame(google)
+go = go[0].unique().tolist()
+len(go)
+
+si = pd.DataFrame(sizmek)
+si = si[0].unique().tolist()
+len(si)
+
+ot = pd.DataFrame(other)
+ot = ot[0].unique().tolist()
+len(ot)
+
+tw = pd.DataFrame(twitter)
+tw = rw[0].unique().tolist()
+len(tw)
 
 c_unified = facebook + google + sizmek + twitter + other
 c_unified = pd.DataFrame(c_unified)
