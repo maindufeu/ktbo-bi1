@@ -57,7 +57,7 @@ for filename in glob.iglob(path, recursive=True):
 ######
 
 c_unified = facebook + google + sizmek + twitter + other
-c_unified = pd.unique(c_unified)
+c_unified = pd.Series(pd.Categorical(c_unified)).unique()
 c_unified = c_unified.tolist()
 print("lista de campañas únicas:")
 print(c_unified)
