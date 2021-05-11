@@ -1,13 +1,13 @@
-rm Campaigns/facebook/*
-rm Campaigns/google/*
-rm Campaigns/mp/*
-rm Campaigns/othercampaigns/*
-rm Campaigns/sizmekco/*
-rm Campaigns/sizmekmx/*
-rm Campaigns/sizmekmi/*
-rm Campaigns/sizmekpr/*
-rm Campaigns/twitter/*
-rm Campaigns/youtube/*
+rm -rf Campaigns/facebook/*
+rm -rf Campaigns/google/*
+rm -rf Campaigns/mp/*
+rm -rf Campaigns/othercampaigns/*
+rm -rf Campaigns/sizmekco/*
+rm -rf Campaigns/sizmekmx/*
+rm -rf Campaigns/sizmekmi/*
+rm -rf Campaigns/sizmekpr/*
+rm -rf Campaigns/twitter/*
+rm -rf Campaigns/youtube/*
 
 cd Campaigns
 ./sftp_download.sh#!/bin/sh
