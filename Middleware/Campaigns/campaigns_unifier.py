@@ -72,7 +72,7 @@ ot = ot[0].unique().tolist()
 len(ot)
 
 tw = pd.DataFrame(twitter)
-tw = rw[0].unique().tolist()
+tw = tw[0].unique().tolist()
 len(tw)
 
 c_unified = facebook + google + sizmek + twitter + other
