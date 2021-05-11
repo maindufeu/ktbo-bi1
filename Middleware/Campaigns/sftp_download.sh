@@ -42,24 +42,27 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
   rmdir youtube
   mkdir youtube
 
-  lcd mp
-  get mp/*
-  lcd ..
-  rmdir mp
-  mkdir mp
+#  lcd mp
+#  get mp/*
+#  lcd ..
+#  rmdir mp
+#  mkdir mp
 
-  lcd twitter
-  get twitter/*
-  lcd ..
-  rmdir twitter
-  mkdir twitter
+#  lcd twitter
+#  get twitter/*
+#  lcd ..
+#  rmdir twitter
+#  mkdir twitter
 
-  lcd twitter
-  get othercampaigns/*
-  lcd ..
-  rmdir othercampaigns
-  mkdir othercampaigns
+#  lcd othercampaigns
+#  get othercampaigns/*
+#  lcd ..
+#  rmdir othercampaigns
+#  mkdir othercampaigns
 
 
   bye
 !
+
+aws s3 cp s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx othercampaigns/acumulado_other.xlsx
+aws s3 cp s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx twitter/acumulado_twitter.xlsx
