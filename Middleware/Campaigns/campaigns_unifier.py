@@ -22,28 +22,38 @@ pattern = '*.csv'
 path = 'Campaigns/**'
 pattern = '*.csv'
 mp_path = 'Mediaplan/mp_processed'
-listfiles = []
+sizmek = []
+google = []
+facebook = []
 mpfiles = []
-frames = []
+source =
 mp_frames =[]
 
 for filename in glob.iglob(path, recursive=True):
     if os.path.isfile(filename): # filter dirs
         if fnmatch.fnmatch(filename, pattern):
-            print(filename)
-            df = pd.read_csv(filename)
-            print(df.columns)
+            if fnmatch.fnmatch(filename, '/.*sizmek.*/'):
+                print(filename)
+                df = pd.read_csv(filename, usecols = ['Campaign Name'])
+                df = df['Campaign Name'].unique().tolist()
+                sizmek.append(df)
+                print(sizmek)
+
+            elif fnmatch.fnmatch(filename, '/.*google.*/'):
+                print(filename)
+                df = pd.read_csv(filename, usecols = ['Campaign Name'])
+                df = df['Campaign Name'].unique().tolist()
+                sizmek.append(df)
+                print(google)
+
+            else fnmatch.fnmatch(filename, '/.*facebook.*/'):
+                print(filename)
+                df = pd.read_csv(filename, usecols = ['Campaign Name'])
+                df = df['Campaign Name'].unique().tolist()
+                sizmek.append(df)
+                print(facebook)
 ######
 
-#for filename in glob.iglob(path, recursive=True):
-#    if os.path.isfile(filename): # filter dirs
-#        if fnmatch.fnmatch(filename, pattern):
-#            google = pd.read_csv('google/{i}', usecols=['Campaign_duplicate'])
-#            google = google.unique().tolist()
-#            print("Googleleght:")
-#            print(len(google))
-
-#facebook = pd.read_csv("google/409571_adwords_adwords-143-20210427-94eedaa01640429a86addf575c77449a.csv")
-
-
-#print(len(c_unified))
+c_unified = facebook + google + sizmek + twitter + other
+c_unified = unique(c_unified)
+print(len(c_unified))
