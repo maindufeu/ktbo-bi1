@@ -36,21 +36,21 @@ for filename in glob.iglob(path, recursive=True):
                 df = pd.read_csv(filename, usecols = ['Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
                 sizmek.append(df)
-                print("si"+len(sizmek))
+                print(f'si{len(sizmek)}')
 
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
                 df = df['Campaign_duplicate'].unique().tolist()
                 sizmek.append(df)
-                print("go"+len(google))
+                print(f'go{len(google)}')
 
             elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
                 df = df['Temp Campaign Name'].unique().tolist()
                 sizmek.append(df)
-                print("fb"+len(facebook))
+                print(f'fb{len(facebook}'))
 ######
 
 c_unified = facebook + google + sizmek + twitter + other
