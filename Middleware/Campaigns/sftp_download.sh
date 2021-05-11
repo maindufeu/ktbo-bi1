@@ -28,7 +28,7 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
 
 
   lcd Campaigns/google
-  get google_ads/*
+  get google/*
   lcd ..
   lcd ..
 
