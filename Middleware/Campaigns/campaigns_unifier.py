@@ -16,6 +16,11 @@ print(len(other))
 
 google = pd.read_csv("google/409571_adwords_adwords-143-20210427-94eedaa01640429a86addf575c77449a.csv")
 google = google['Campaign_duplicate'].str.upper().str.strip(" ").unique().tolist()
+print("Googleleght:")
 print(len(google))
+
 c_unified =twitter + other +google
+print("unifiedListLength:")
+print(len(other))
+
 print(len(c_unified))
