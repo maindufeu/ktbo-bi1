@@ -45,7 +45,7 @@ for filename in glob.iglob(path, recursive=True):
                 sizmek.append(df)
                 print(google)
 
-            else fnmatch.fnmatch(filename, '/.*facebook.*/'):
+            elif fnmatch.fnmatch(filename, '/.*facebook.*/'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
