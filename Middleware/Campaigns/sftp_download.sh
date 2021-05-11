@@ -3,26 +3,40 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
 
   lcd Campaigns/facebook
   get facebook/*
+  lcd ..
+  lcd ..
 
   lcd Campaigns/sizmekpr
   get sizmekpr/*
+  lcd ..
+  lcd ..
 
   lcd Campaigns/sizmekmx
   get sizmekmx/*
+  lcd ..
+  lcd ..
 
   lcd Campaigns/sizmekmi
   get sizmekmi/*
+  lcd ..
+  lcd ..
 
   lcd Campaigns/sizmekco
   get sizmekco/*
+  lcd ..
+  lcd ..
 
 
   lcd Campaigns/google
   get google_ads/*
+  lcd ..
+  lcd ..
 
 
   lcd Campaigns/youtube
   get youtube/*
+  lcd ..
+  lcd ..
 
 
 #  lcd mp
