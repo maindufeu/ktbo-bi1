@@ -26,7 +26,6 @@ sizmek = []
 google = []
 facebook = []
 mpfiles = []
-source =
 mp_frames =[]
 
 for filename in glob.iglob(path, recursive=True):
