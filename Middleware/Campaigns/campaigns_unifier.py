@@ -76,7 +76,12 @@ tw = tw[0].unique().tolist()
 print(len(tw))
 
 c_unified = facebook + google + sizmek + twitter + other
-print(c_unified)
+print(len(facebook))
+print(len(google))
+print(len(sizmek))
+print(len(twitter))
+print(len(other))
+print("unida")
 print(len(c_unified))
 c_unified = pd.DataFrame(c_unified)
 c_unified = c_unified[0].unique().tolist()
