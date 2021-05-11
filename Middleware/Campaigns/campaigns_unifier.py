@@ -41,7 +41,7 @@ for filename in glob.iglob(path, recursive=True):
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
-                df = df['Campaign duplicate'].unique().tolist()
+                df = df['Campaign_duplicate'].unique().tolist()
                 sizmek.append(df)
                 print(google)
 
