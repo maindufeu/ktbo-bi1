@@ -31,21 +31,21 @@ mp_frames =[]
 for filename in glob.iglob(path, recursive=True):
     if os.path.isfile(filename): # filter dirs
         if fnmatch.fnmatch(filename, pattern):
-            if fnmatch.fnmatch(filename, '/.*sizmek.*/'):
+            if fnmatch.fnmatch(filename, '*sizmek*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
                 sizmek.append(df)
                 print(sizmek)
 
-            elif fnmatch.fnmatch(filename, '/.*google.*/'):
+            elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
                 sizmek.append(df)
                 print(google)
 
-            elif fnmatch.fnmatch(filename, '/.*facebook.*/'):
+            elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
@@ -56,4 +56,6 @@ for filename in glob.iglob(path, recursive=True):
 c_unified = facebook + google + sizmek + twitter + other
 c_unified = pd.unique(c_unified)
 c_unified = c_unified.tolist()
+print("lista de campañas únicas:")
+print(c_unified)
 print(len(c_unified))
