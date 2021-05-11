@@ -11,7 +11,7 @@ rm -rf Campaigns/youtube/*
 
 cd Campaigns
 ./sftp_download.sh#!/bin/sh
-cd ..
+
 python3 campaigns_unifier.py
 #python3 matchrate.py
 #aws s3 cp unmatched.csv s3://testingmidktbo/unmatched.csv
