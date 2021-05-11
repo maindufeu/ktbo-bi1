@@ -77,6 +77,7 @@ print(len(tw))
 
 c_unified = facebook + google + sizmek + twitter + other
 print(c_unified)
+print(len(c_unified))
 c_unified = pd.DataFrame(c_unified)
 c_unified = c_unified[0].unique().tolist()
 print("lista de campañas únicas:")
