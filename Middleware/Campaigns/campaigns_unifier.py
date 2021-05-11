@@ -65,10 +65,12 @@ print(len(go))
 
 si = pd.DataFrame(sizmek)
 si = si[0].unique().tolist()
+print("sizmek uniques")
 print(len(si))
 
 ot = pd.DataFrame(other)
 ot = ot[0].unique().tolist()
+print("otheruniques")
 print(len(ot))
 
 tw = pd.DataFrame(twitter)
@@ -78,8 +80,10 @@ print(len(tw))
 c_unified = facebook + google + sizmek + twitter + other
 print(len(facebook))
 print(len(google))
+print("sizmek")
 print(len(sizmek))
 print(len(twitter))
+print("other")
 print(len(other))
 print("unida")
 print(len(c_unified))
