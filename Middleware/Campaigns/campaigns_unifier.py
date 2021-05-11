@@ -43,7 +43,7 @@ for filename in glob.iglob(path, recursive=True):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
                 df = df['Campaign_duplicate'].unique().tolist()
-                sizmek.append(df)
+                google.append(df)
                 print("go")
                 print(len(google))
 
@@ -51,12 +51,11 @@ for filename in glob.iglob(path, recursive=True):
                 print(filename)
                 df = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
                 df = df['Temp Campaign Name'].unique().tolist()
-                sizmek.append(df)
+                facebook.append(df)
                 print("fb")
                 print(len(facebook))
 ######
 fb = pd.DataFrame(facebook)
-len(fb)
 fb = fb[0].unique().tolist()
 len(fb)
 
