@@ -1,42 +1,42 @@
 sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
   cd uploads/test
 
-  lcd facebook
+  lcd Campaigns/facebook
   get facebook/*
   lcd ..
   rmdir facebook
   mkdir facebook
 
-  lcd sizmekpr
+  lcd Campaigns/sizmekpr
   get sizmekpr/*
   lcd ..
   rmdir sizmekpr
   mkdir sizmekpr
 
-  lcd sizmekmx
+  lcd Campaigns/sizmekmx
   get sizmekmx/*
   rmdir sizmekmx
   mkdir sizmekmx
 
-  lcd sizmekmi
+  lcd Campaigns/sizmekmi
   get sizmekmi/*
   lcd ..
   rmdir sizmekmi
   mkdir sizmekmi
 
-  lcd sizmekco
+  lcd Campaigns/sizmekco
   get sizmekco/*
   lcd ..
   rmdir sizmekco
   mkdir sizmekco
 
-  lcd google
+  lcd Campaigns/google
   get google_ads/*
   lcd ..
   rmdir google_ads
   mkdir google_ads
 
-  lcd youtube
+  lcd Campaigns/youtube
   get youtube/*
   lcd ..
   rmdir youtube
@@ -64,5 +64,5 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
   bye
 !
 
-aws s3 cp s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx othercampaigns/acumulado_other.xlsx
-aws s3 cp s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx twitter/acumulado_twitter.xlsx
+aws s3 cp s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx Campaigns/othercampaigns/acumulado_other.xlsx
+aws s3 cp s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx Campaigns/twitter/acumulado_twitter.xlsx
