@@ -57,23 +57,23 @@ for filename in glob.iglob(path, recursive=True):
 ######
 fb = pd.DataFrame(facebook)
 fb = fb[0].unique().tolist()
-len(fb)
+print(len(fb))
 
 go = pd.DataFrame(google)
 go = go[0].unique().tolist()
-len(go)
+print(len(go))
 
 si = pd.DataFrame(sizmek)
 si = si[0].unique().tolist()
-len(si)
+print(len(si))
 
 ot = pd.DataFrame(other)
 ot = ot[0].unique().tolist()
-len(ot)
+print(len(ot))
 
 tw = pd.DataFrame(twitter)
 tw = tw[0].unique().tolist()
-len(tw)
+print(len(tw))
 
 c_unified = facebook + google + sizmek + twitter + other
 c_unified = pd.DataFrame(c_unified)
