@@ -58,7 +58,7 @@ for filename in glob.iglob(path, recursive=True):
 
 c_unified = facebook + google + sizmek + twitter + other
 c_unified = pd.DataFrame(c_unified)
-c_unified = c_unified.unique().tolist()
+c_unified = c_unified[0].unique().tolist()
 print("lista de campañas únicas:")
 print(c_unified)
 print(len(c_unified))
