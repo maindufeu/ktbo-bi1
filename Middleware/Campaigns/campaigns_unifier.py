@@ -56,6 +56,7 @@ for filename in glob.iglob(path, recursive=True):
                 print(len(facebook))
 ######
 fb = pd.DataFrame(facebook)
+len(fb)
 fb = fb[0].unique().tolist()
 len(fb)
 
