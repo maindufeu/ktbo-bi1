@@ -3,44 +3,27 @@ sshpass -p Eemaa9eiF4aeteigheiyu3Mae0piej sftp ktbo@sftp.adverity.com -22 << !
 
   lcd Campaigns/facebook
   get facebook/*
-  lcd ..
-  rmdir facebook
-  mkdir facebook
 
   lcd Campaigns/sizmekpr
   get sizmekpr/*
-  lcd ..
-  rmdir sizmekpr
-  mkdir sizmekpr
 
   lcd Campaigns/sizmekmx
   get sizmekmx/*
-  rmdir sizmekmx
-  mkdir sizmekmx
 
   lcd Campaigns/sizmekmi
   get sizmekmi/*
-  lcd ..
-  rmdir sizmekmi
-  mkdir sizmekmi
 
   lcd Campaigns/sizmekco
   get sizmekco/*
-  lcd ..
-  rmdir sizmekco
-  mkdir sizmekco
+
 
   lcd Campaigns/google
   get google_ads/*
-  lcd ..
-  rmdir google_ads
-  mkdir google_ads
+
 
   lcd Campaigns/youtube
   get youtube/*
-  lcd ..
-  rmdir youtube
-  mkdir youtube
+
 
 #  lcd mp
 #  get mp/*
