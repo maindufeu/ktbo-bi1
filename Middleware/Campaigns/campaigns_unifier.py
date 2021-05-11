@@ -40,14 +40,14 @@ for filename in glob.iglob(path, recursive=True):
 
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
-                df = pd.read_csv(filename, usecols = ['Campaign Name'])
+                df = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
                 df = df['Campaign Name'].unique().tolist()
                 sizmek.append(df)
                 print(google)
 
             elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
-                df = pd.read_csv(filename, usecols = ['Campaign Name'])
+                df = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
                 df = df['Campaign Name'].unique().tolist()
                 sizmek.append(df)
                 print(facebook)
