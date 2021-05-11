@@ -10,5 +10,5 @@ if status == 0:
     subprocess.call('./mediaplan_up.sh >> log.log', shell=True)
     print('succesful load')
     print('---matchrate evaluation:')
-    subprocess.call('cd..', shell=True)
-    subprocess.call('matchrate_upd.sh >> match.log', shell=True)
+    subprocess.call('cd ..', shell=True)
+    subprocess.call('./matchrate_upd.sh >> match.log', shell=True)
