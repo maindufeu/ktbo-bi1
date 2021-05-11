@@ -53,13 +53,6 @@ for filename in glob.iglob(path, recursive=True):
                 print(facebook)
 ######
 
-import numpy as np
-
-# function to get unique values
-def unique(list1):
-    x = np.array(list1)
-    print(np.unique(x))
-
 c_unified = facebook + google + sizmek + twitter + other
-c_unified = unique(c_unified)
+c_unified = pd.DataFrame(c_unified)
 print(len(c_unified))
