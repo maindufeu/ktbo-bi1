@@ -13,5 +13,5 @@ chmod +x Campaigns/sftp_download.sh
 ./Campaigns/sftp_download.sh
 
 python3 Campaigns/campaigns_unifier.py
-#python3 matchrate.py
-#aws s3 cp unmatched.csv s3://testingmidktbo/unmatched.csv
+python3 matchrate.py
+aws s3 cp unmatched.csv s3://testingmidktbo/unmatched.csv
