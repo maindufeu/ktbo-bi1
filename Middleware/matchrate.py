@@ -25,7 +25,7 @@ for filename in glob.iglob(mp_path, recursive=True):
         if fnmatch.fnmatch(filename, pattern):
             mpfiles.append(filename)
             df = pd.read_csv(filename)
-            mp_frames .append(df)
+            mp_frames.append(df)
 
 #mediafacts = pd.concat([df['Campaign', 'Datasource'] for df in frames], ignore_index=True)
 #mediafacts = pd.read_csv('Campaigns/adverity-export_sftp.csv')
