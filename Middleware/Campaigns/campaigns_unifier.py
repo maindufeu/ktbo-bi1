@@ -69,19 +69,19 @@ for filename in glob.iglob(path, recursive=True):
                 print(len(facebook))
 ######
 
-fb_df.to_csv("Campaigns/campaigns_unified_fb.csv")
+fb_df.to_csv("Campaigns/campaigns_unified_fb.csv", index_col = False)
 
-go_df.to_csv("Campaigns/campaigns_unified_go.csv")
+go_df.to_csv("Campaigns/campaigns_unified_go.csv", index_col = False)
 
-si_df.to_csv("Campaigns/campaigns_unified_si.csv")
+si_df.to_csv("Campaigns/campaigns_unified_si.csv", index_col = False)
 
-ot.to_csv("Campaigns/campaigns_unified_ot.csv")
+ot.to_csv("Campaigns/campaigns_unified_ot.csv", index_col = False)
 
-tw.to_csv("Campaigns/campaigns_unified_tw.csv")
+tw.to_csv("Campaigns/campaigns_unified_tw.csv", index_col = False)
 
 df_u = pd.concat([fb_df, go_df, si_df, ot, tw])
-df_u['Campaign Name_1'] = df_u['Campaign Name'].drop_duplicates(keep=False,inplace=True)
-df_u.to_csv('Campaigns/campaigns_unified1.csv')
+df_u = df_u.drop_duplicates('Campaign Name')
+df_u.to_csv('Campaigns/campaigns_unified1.csv', index_col = False)
 
 c_unified = facebook + google + sizmek + twitter + other
 print(len(facebook))
