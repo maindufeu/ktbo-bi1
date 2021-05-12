@@ -92,7 +92,10 @@ c_list = pd.DataFrame(c_list, columns=['Campaign Name'])
 
 c_list.to_csv("Campaigns/campaigns_unified.csv")
 
-c_list = c_list[0].unique().tolist()
+c_unified = c_unified[0].unique().tolist()
+c_list = {'Campaign Name':c_unified}
+c_list.to_csv("Campaigns/campaigns_unified1.csv")
+
 print("lista de campañas únicas:")
 print(c_list)
 print(len(c_unified))
