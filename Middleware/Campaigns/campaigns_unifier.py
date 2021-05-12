@@ -71,7 +71,7 @@ for filename in glob.iglob(path, recursive=True):
 
 fb_df.to_csv("Campaigns/campaigns_unified_fb.csv")
 
-go_df.to_csv("Campaigns/campaigns_unified_go.csv")
+go_df.to_csv("Campaigns/campaigns_unified_go1.csv")
 
 si_df.to_csv("Campaigns/campaigns_unified_si.csv")
 
