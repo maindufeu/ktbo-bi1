@@ -2,11 +2,12 @@ import pandas as pd
 import glob
 import os
 import fnmatch
-
+import subprocess
 
 
 other = pd.read_excel("Campaigns/othercampaigns/acumulado_other.xlsx", usecols = ['Campaign'])
 twitter = pd.read_excel("Campaigns/twitter/acumulado_twitter.xlsx", usecols = ['Campaign'])
+
 twitter = twitter['Campaign'].str.upper().str.strip(" ").unique().tolist()
 tw =pd.DataFrame({'Campaign Name':twitter})
 print("Twitter length:")
@@ -17,18 +18,13 @@ ot = pd.DataFrame({'Campaign Name':other})
 print("Other Campaigns length:")
 print(len(other))
 
-path = 'google/*'
-pattern = '*.csv'
-
 ########
 path = 'Campaigns/**'
 pattern = '*.csv'
-mp_path = 'Mediaplan/mp_processed'
+
 sizmek = []
 google = []
 facebook = []
-mpfiles = []
-mp_frames =[]
 
 si_df = pd.DataFrame(({'Campaign Name' : []}))
 fb_df = pd.DataFrame(({'Campaign Name' : []}))
@@ -69,38 +65,13 @@ for filename in glob.iglob(path, recursive=True):
                 print(len(facebook))
 ######
 
-fb_df.to_csv("Campaigns/campaigns_unified_fb.csv", index = False)
-
-go_df.to_csv("Campaigns/campaigns_unified_go.csv", index = False)
-
-si_df.to_csv("Campaigns/campaigns_unified_si.csv", index = False)
-
-ot.to_csv("Campaigns/campaigns_unified_ot.csv", index = False)
-
-tw.to_csv("Campaigns/campaigns_unified_tw.csv", index = False)
-
 df_u = pd.concat([fb_df, go_df, si_df, ot, tw])
 df_u = df_u.drop_duplicates('Campaign Name')
-df_u.to_csv('Campaigns/campaigns_unified1.csv', index = False)
-
-c_unified = facebook + google + sizmek + twitter + other
-print(len(facebook))
-print(len(google))
-print("sizmek")
-print(len(sizmek))
-print(len(twitter))
-print("other")
-print(len(other))
-print("unida")
-print(len(c_unified))
-c_list = {'Campaign Name':c_unified}
-c_list = pd.DataFrame(c_list, columns=['Campaign Name'])
-c_list.to_csv("Campaigns/campaigns_unified.csv")
-
-#c_list = pd.DataFrame(c_list, columns=['Campaign Name'])
-#c_list = c_list['Campaign Name'].unique().tolist()
-#c_list.to_csv("Campaigns/campaigns_unified1.csv")
+df_u.to_csv('Campaigns/campaigns_unified.csv', index = False)
 
 print("lista de campañas únicas:")
-print(c_list)
-print(len(c_unified))
+print(df_u)
+
+subprocess.call('git add .', shell=True)
+subprocess.call('git commit -m "campaigns unified update"', shell=True)
+subprocess.call('git push', shell=True)
