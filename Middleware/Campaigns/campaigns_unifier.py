@@ -55,30 +55,40 @@ for filename in glob.iglob(path, recursive=True):
                 print("fb")
                 print(len(facebook))
 ######
+
+fb = {'Campaign Name':fb}
 fb = pd.DataFrame(facebook, columns = ['Campaign Name'])
 fb = fb['Campaign Name'].unique().tolist()
 print(len(fb))
 fb.to_csv("Campaigns/campaigns_unified_fb.csv")
 
 
+
+go = {'Campaign Name':go}
 go = pd.DataFrame(google, columns = ['Campaign Name'])
 go = go['Campaign Name'].unique().tolist()
 print(len(go))
 go.to_csv("Campaigns/campaigns_unified_go.csv")
 
 
+
+si = {'Campaign Name':si}
 si = pd.DataFrame(sizmek, columns = ['Campaign Name'])
 si = si['Campaign Name'].unique().tolist()
 print("sizmek uniques")
 print(len(si))
 si.to_csv("Campaigns/campaigns_unified_si.csv")
 
+
+ot = {'Campaign Name':ot}
 ot = pd.DataFrame(other, columns = ['Campaign Name'])
 ot = ot['Campaign Name'].unique().tolist()
 print("otheruniques")
 print(len(ot))
 ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
+
+tw = {'Campaign Name':tw}
 tw = pd.DataFrame(twitter, columns = ['Campaign Name'])
 tw = tw['Campaign Name'].unique().tolist()
 print(len(tw))
