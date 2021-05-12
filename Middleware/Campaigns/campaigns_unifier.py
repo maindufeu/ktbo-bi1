@@ -56,31 +56,31 @@ for filename in glob.iglob(path, recursive=True):
                 print(len(facebook))
 ######
 fb = pd.DataFrame(facebook, columns = ['Campaign Name'])
-fb = fb[0].unique().tolist()
+fb = fb['Campaign Name'].unique().tolist()
 print(len(fb))
 fb.to_csv("Campaigns/campaigns_unified_fb.csv")
 
 
 go = pd.DataFrame(google, columns = ['Campaign Name'])
-go = go[0].unique().tolist()
+go = go['Campaign Name'].unique().tolist()
 print(len(go))
 go.to_csv("Campaigns/campaigns_unified_go.csv")
 
 
 si = pd.DataFrame(sizmek, columns = ['Campaign Name'])
-si = si[0].unique().tolist()
+si = si['Campaign Name'].unique().tolist()
 print("sizmek uniques")
 print(len(si))
 si.to_csv("Campaigns/campaigns_unified_si.csv")
 
 ot = pd.DataFrame(other, columns = ['Campaign Name'])
-ot = ot[0].unique().tolist()
+ot = ot['Campaign Name'].unique().tolist()
 print("otheruniques")
 print(len(ot))
 ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
 tw = pd.DataFrame(twitter, columns = ['Campaign Name'])
-tw = tw[0].unique().tolist()
+tw = tw['Campaign Name'].unique().tolist()
 print(len(tw))
 tw.to_csv("Campaigns/campaigns_unified_tw.csv")
 
