@@ -73,9 +73,9 @@ go_df.to_csv("Campaigns/campaigns_unified_go.csv")
 
 si_df.to_csv("Campaigns/campaigns_unified_si.csv")
 
-ot.to_csv("Campaigns/campaigns_unified_ot.csv")
+other.to_csv("Campaigns/campaigns_unified_ot.csv")
 
-tw.to_csv("Campaigns/campaigns_unified_tw.csv")
+twitter.to_csv("Campaigns/campaigns_unified_tw.csv")
 
 c_unified = facebook + google + sizmek + twitter + other
 print(len(facebook))
