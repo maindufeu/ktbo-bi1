@@ -58,7 +58,7 @@ for filename in glob.iglob(path, recursive=True):
 
 fb = {'Campaign Name':facebook}
 fb = pd.DataFrame(fb, columns = ['Campaign Name'])
-fb = fb['Campaign Name'].unique().tolist()
+fb = fb['Campaign Name'].unique()#.tolist()
 print(len(fb))
 fb.to_csv("Campaigns/campaigns_unified_fb.csv")
 
@@ -66,7 +66,7 @@ fb.to_csv("Campaigns/campaigns_unified_fb.csv")
 
 go = {'Campaign Name':google}
 go = pd.DataFrame(go, columns = ['Campaign Name'])
-go = go['Campaign Name'].unique().tolist()
+go = go['Campaign Name'].unique()#.tolist()
 print(len(go))
 go.to_csv("Campaigns/campaigns_unified_go.csv")
 
@@ -74,7 +74,7 @@ go.to_csv("Campaigns/campaigns_unified_go.csv")
 
 si = {'Campaign Name':sizmek}
 si = pd.DataFrame(si, columns = ['Campaign Name'])
-si = si['Campaign Name'].unique().tolist()
+si = si['Campaign Name'].unique()#.tolist()
 print("sizmek uniques")
 print(len(si))
 si.to_csv("Campaigns/campaigns_unified_si.csv")
@@ -82,7 +82,7 @@ si.to_csv("Campaigns/campaigns_unified_si.csv")
 
 ot = {'Campaign Name':other}
 ot = pd.DataFrame(ot, columns = ['Campaign Name'])
-ot = ot['Campaign Name'].unique().tolist()
+ot = ot['Campaign Name'].unique()#.tolist()
 print("otheruniques")
 print(len(ot))
 ot.to_csv("Campaigns/campaigns_unified_ot.csv")
@@ -90,7 +90,7 @@ ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
 tw = {'Campaign Name':twitter}
 tw = pd.DataFrame(tw, columns = ['Campaign Name'])
-tw = tw['Campaign Name'].unique().tolist()
+tw = tw['Campaign Name'].unique()#.tolist()
 print(len(tw))
 tw.to_csv("Campaigns/campaigns_unified_tw.csv")
 
