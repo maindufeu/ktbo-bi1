@@ -50,7 +50,7 @@ for filename in glob.iglob(path, recursive=True):
 
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
-                go = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
+                go = pd.read_csv(filename, usecols = ['Campaign'])
                 go.columns = ['Campaign Name']
                 go_l = go['Campaign Name'].unique().tolist()
                 google.append(go_l)
