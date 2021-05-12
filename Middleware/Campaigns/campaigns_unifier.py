@@ -28,70 +28,50 @@ facebook = []
 mpfiles = []
 mp_frames =[]
 
+si_df = pd.DataFrame(({'Campaign Name' : []}))
+fb_df = pd.DataFrame(({'Campaign Name' : []}))
+go_df = pd.DataFrame(({'Campaign Name' : []}))
+
+
 for filename in glob.iglob(path, recursive=True):
     if os.path.isfile(filename): # filter dirs
         if fnmatch.fnmatch(filename, pattern):
             if fnmatch.fnmatch(filename, '*sizmek*'):
                 print(filename)
-                df = pd.read_csv(filename, usecols = ['Campaign Name'])
-                df = df['Campaign Name'].unique().tolist()
-                sizmek.append(df)
+                si = pd.read_csv(filename, usecols = ['Campaign Name'], columns = ['Campaign Name'])
+                si_l = si['Campaign Name'].unique().tolist()
+                sizmek.append(si)
+                si_df = pd.concat([si_df, si])
                 print("si")
                 print(len(sizmek))
 
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
-                df = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
-                df = df['Campaign_duplicate'].unique().tolist()
-                google.append(df)
+                go = pd.read_csv(filename, usecols = ['Campaign_duplicate'], columns = ['Campaign Name'])
+                go_l = go['Campaign Name'].unique().tolist()
+                google.append(go_l)
+                go_df = pd.concat([go_df, si])
                 print("go")
                 print(len(google))
 
             elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
-                df = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
-                df = df['Temp Campaign Name'].unique().tolist()
+                fb = pd.read_csv(filename, usecols = ['Temp Campaign Name'], columns = ['Campaign Name'])
+                fb = fb['Campaign Name'].unique().tolist()
                 facebook.append(df)
+                fb_df = pd.concat([fb_df, si])
                 print("fb")
                 print(len(facebook))
 ######
 
-fb = {'Campaign Name':facebook}
-fb = pd.DataFrame(fb, columns = ['Campaign Name'])
-fb = fb['Campaign Name'].unique()#.tolist()
-print(len(fb))
-fb.to_csv("Campaigns/campaigns_unified_fb.csv")
+fb_df.to_csv("Campaigns/campaigns_unified_fb.csv")
 
+go_df.to_csv("Campaigns/campaigns_unified_go.csv")
 
+si_df.to_csv("Campaigns/campaigns_unified_si.csv")
 
-go = {'Campaign Name':google}
-go = pd.DataFrame(go, columns = ['Campaign Name'])
-go = go['Campaign Name'].unique()#.tolist()
-print(len(go))
-go.to_csv("Campaigns/campaigns_unified_go.csv")
-
-
-
-si = {'Campaign Name':sizmek}
-si = pd.DataFrame(si, columns = ['Campaign Name'])
-si = si['Campaign Name'].unique()#.tolist()
-print("sizmek uniques")
-print(len(si))
-si.to_csv("Campaigns/campaigns_unified_si.csv")
-
-
-ot = {'Campaign Name':other}
-ot = pd.DataFrame(ot, columns = ['Campaign Name'])
-ot = ot['Campaign Name'].unique()#.tolist()
-print("otheruniques")
-print(len(ot))
 ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
-
-tw = {'Campaign Name':twitter}
-tw = pd.DataFrame(tw, columns = ['Campaign Name'])
-tw = tw['Campaign Name'].unique()#.tolist()
-print(len(tw))
 tw.to_csv("Campaigns/campaigns_unified_tw.csv")
 
 c_unified = facebook + google + sizmek + twitter + other
