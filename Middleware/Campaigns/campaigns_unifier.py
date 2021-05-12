@@ -8,10 +8,12 @@ import fnmatch
 other = pd.read_excel("Campaigns/othercampaigns/acumulado_other.xlsx", usecols = ['Campaign'])
 twitter = pd.read_excel("Campaigns/twitter/acumulado_twitter.xlsx", usecols = ['Campaign'])
 twitter = twitter['Campaign'].str.upper().str.strip(" ").unique().tolist()
+tw =pd.DataFrame({'Campaign Name':twitter})
 print("Twitter length:")
 print(len(twitter))
 
 other = other['Campaign'].str.upper().str.strip(" ").unique().tolist()
+ot = pd.DataFrame({'Campaign Name':other})
 print("Other Campaigns length:")
 print(len(other))
 
@@ -73,9 +75,9 @@ go_df.to_csv("Campaigns/campaigns_unified_go.csv")
 
 si_df.to_csv("Campaigns/campaigns_unified_si.csv")
 
-other.to_csv("Campaigns/campaigns_unified_ot.csv")
+ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
-twitter.to_csv("Campaigns/campaigns_unified_tw.csv")
+tw.to_csv("Campaigns/campaigns_unified_tw.csv")
 
 c_unified = facebook + google + sizmek + twitter + other
 print(len(facebook))
