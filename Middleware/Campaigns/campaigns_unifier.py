@@ -79,6 +79,9 @@ ot.to_csv("Campaigns/campaigns_unified_ot.csv")
 
 tw.to_csv("Campaigns/campaigns_unified_tw.csv")
 
+df_u = pd.concat([fb_df, go_df, si_df, ot, tw])
+df_u['Campaign Name'] = df['Campaign Name'].unique()
+
 c_unified = facebook + google + sizmek + twitter + other
 print(len(facebook))
 print(len(google))
