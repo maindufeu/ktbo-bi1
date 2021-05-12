@@ -41,7 +41,7 @@ for filename in glob.iglob(path, recursive=True):
                 si = pd.read_csv(filename, usecols = ['Campaign Name'])
                 si.columns = ['Campaign Name']
                 si_l = si['Campaign Name'].unique().tolist()
-                sizmek.append(si)
+                sizmek.append(si_l)
                 si_df = pd.concat([si_df, si])
                 print("si")
                 print(len(sizmek))
@@ -60,8 +60,8 @@ for filename in glob.iglob(path, recursive=True):
                 print(filename)
                 fb = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
                 fb.columns = ['Campaign Name']
-                fb = fb['Campaign Name'].unique().tolist()
-                facebook.append(df)
+                fb_l = fb['Campaign Name'].unique().tolist()
+                facebook.append(fb_l)
                 fb_df = pd.concat([fb_df, si])
                 print("fb")
                 print(len(facebook))
