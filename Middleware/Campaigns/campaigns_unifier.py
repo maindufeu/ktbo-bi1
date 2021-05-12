@@ -87,11 +87,12 @@ print("other")
 print(len(other))
 print("unida")
 print(len(c_unified))
-c_unified = pd.DataFrame(c_unified, columns=['Campaign Name'])
+c_list = {'Campaign Name':c_list}
+c_list = pd.DataFrame(c_list, columns=['Campaign Name'])
 
-c_unified.to_csv("Campaigns/campaigns_unified.csv")
+c_list.to_csv("Campaigns/campaigns_unified.csv")
 
-c_unified = c_unified[0].unique().tolist()
+c_list = c_list[0].unique().tolist()
 print("lista de campañas únicas:")
-print(c_unified)
+print(c_list)
 print(len(c_unified))
