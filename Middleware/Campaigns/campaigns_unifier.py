@@ -52,7 +52,7 @@ for filename in glob.iglob(path, recursive=True):
                 go.columns = ['Campaign Name']
                 go_l = go['Campaign Name'].unique().tolist()
                 google.append(go_l)
-                go_df = pd.concat([go_df, si])
+                go_df = pd.concat([go_df, go])
                 print("go")
                 print(len(google))
 
@@ -62,7 +62,7 @@ for filename in glob.iglob(path, recursive=True):
                 fb.columns = ['Campaign Name']
                 fb_l = fb['Campaign Name'].unique().tolist()
                 facebook.append(fb_l)
-                fb_df = pd.concat([fb_df, si])
+                fb_df = pd.concat([fb_df, fb])
                 print("fb")
                 print(len(facebook))
 ######
