@@ -87,7 +87,7 @@ print("other")
 print(len(other))
 print("unida")
 print(len(c_unified))
-c_list = {'Campaign Name':c_list}
+c_list = {'Campaign Name':c_unified}
 c_list = pd.DataFrame(c_list, columns=['Campaign Name'])
 
 c_list.to_csv("Campaigns/campaigns_unified.csv")
