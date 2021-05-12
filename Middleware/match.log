@@ -1,0 +1,615 @@
+sftp>   cd uploads/test
+sftp> 
+sftp>   lcd Campaigns/facebook
+sftp>   get facebook/*
+Fetching /uploads/test/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv to 439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekpr
+sftp>   get sizmekpr/*
+Fetching /uploads/test/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv to 439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmx
+sftp>   get sizmekmx/*
+Fetching /uploads/test/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv to 439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmi
+sftp>   get sizmekmi/*
+Fetching /uploads/test/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv to 439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+Fetching /uploads/test/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv to 439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekco
+sftp>   get sizmekco/*
+Fetching /uploads/test/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv to 439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/google
+sftp>   get google/*
+Fetching /uploads/test/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv to 439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/youtube
+sftp>   get youtube/*
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp> #  lcd mp
+sftp> #  get mp/*
+sftp> #  lcd ..
+sftp> #  rmdir mp
+sftp> #  mkdir mp
+sftp> 
+sftp> #  lcd twitter
+sftp> #  get twitter/*
+sftp> #  lcd ..
+sftp> #  rmdir twitter
+sftp> #  mkdir twitter
+sftp> 
+sftp> #  lcd othercampaigns
+sftp> #  get othercampaigns/*
+sftp> #  lcd ..
+sftp> #  rmdir othercampaigns
+sftp> #  mkdir othercampaigns
+sftp> 
+sftp> 
+sftp>   bye
+Completed 256.0 KiB/406.6 KiB (2.3 MiB/s) with 1 file(s) remainingCompleted 406.6 KiB/406.6 KiB (3.5 MiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx to Campaigns/othercampaigns/acumulado_other.xlsx
+Completed 14.2 KiB/14.2 KiB (274.2 KiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx to Campaigns/twitter/acumulado_twitter.xlsx
+Twitter length:
+13
+Other Campaigns length:
+338
+Campaigns/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+fb
+1
+Campaigns/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+go
+1
+Campaigns/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+si
+1
+Campaigns/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+si
+2
+Campaigns/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+si
+3
+Campaigns/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+si
+4
+Campaigns/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+si
+5
+1
+1
+sizmek uniques
+5
+otheruniques
+338
+13
+1
+1
+sizmek
+5
+13
+other
+338
+unida
+358
+lista de campañas únicas:
+['KTBO_2020_BRA_KELLOGGS_TRINK_SEASONAL_GREENCITY_FACEBOOK_INSTAGRAM_AWARENESS_CPM_LUNCH', 'MCMMIA_2021_SLV_Kelloggs_Corporate Promotions_Seasonal_Google_Youtube_Back to School_Affinity Audiences_CPV_Family Breakfast_ENE_L14', 'MCMCO_2020_COL_KELLOGGS_FROOTLOOPS_SEASONAL_FROOTLOOPSJUMBO_SIZMEK_FAMILYBREAKFAST_CPM-XAXIS-DISPLAY', 'MCMMIA_2021_CHL_Kelloggs_Masterbrand_Seasonal_DespiertaMuchoMas_Sizmek_BreakfastforOne_CPM-Xaxis-ScrollReactive', 'MCMMIA_2020_MEX_Kelloggs_Pringles_Seasonal_AlwaysOn_Sizmek_EveningMe_CPM-Xaxis-Video', 'MCMMX_2020_MEX_KELLOGGS_SPECIALK_SEASONAL_ORIGINAL_SIZMEK_BREAKFASTFORONE_CPC-XAXIS-STANDARDBANNERS', 'MCMPR_2020_CRI_KELLOGGS_CORPORATEPROMOTIONS_SEASONAL_CRAYOLA_SIZMEK_FAMILYBREAKFAST_CPM-XAXIS-DISPLAY', 'M', 'K', 'N', 'B', 'R', 'P', 'T', 'A', 'G', 'E', 'H', 'F', 'O', 'L', 'C', 'X', 'I']
+24
+Completed 26.9 KiB/26.9 KiB (144.2 KiB/s) with 1 file(s) remainingupload: ./unmatched.csv to s3://testingmidktbo/unmatched.csv      
+sftp>   cd uploads/test
+sftp> 
+sftp>   lcd Campaigns/facebook
+sftp>   get facebook/*
+Fetching /uploads/test/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv to 439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekpr
+sftp>   get sizmekpr/*
+Fetching /uploads/test/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv to 439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmx
+sftp>   get sizmekmx/*
+Fetching /uploads/test/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv to 439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmi
+sftp>   get sizmekmi/*
+Fetching /uploads/test/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv to 439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+Fetching /uploads/test/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv to 439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekco
+sftp>   get sizmekco/*
+Fetching /uploads/test/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv to 439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/google
+sftp>   get google/*
+Fetching /uploads/test/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv to 439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/youtube
+sftp>   get youtube/*
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp> #  lcd mp
+sftp> #  get mp/*
+sftp> #  lcd ..
+sftp> #  rmdir mp
+sftp> #  mkdir mp
+sftp> 
+sftp> #  lcd twitter
+sftp> #  get twitter/*
+sftp> #  lcd ..
+sftp> #  rmdir twitter
+sftp> #  mkdir twitter
+sftp> 
+sftp> #  lcd othercampaigns
+sftp> #  get othercampaigns/*
+sftp> #  lcd ..
+sftp> #  rmdir othercampaigns
+sftp> #  mkdir othercampaigns
+sftp> 
+sftp> 
+sftp>   bye
+Completed 256.0 KiB/406.6 KiB (2.4 MiB/s) with 1 file(s) remainingCompleted 406.6 KiB/406.6 KiB (3.8 MiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx to Campaigns/othercampaigns/acumulado_other.xlsx
+Completed 14.2 KiB/14.2 KiB (291.3 KiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx to Campaigns/twitter/acumulado_twitter.xlsx
+Twitter length:
+13
+Other Campaigns length:
+338
+Campaigns/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+fb
+1
+Campaigns/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+go
+1
+Campaigns/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+si
+1
+Campaigns/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+si
+2
+Campaigns/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+si
+3
+Campaigns/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+si
+4
+Campaigns/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+si
+5
+1
+1
+sizmek uniques
+5
+otheruniques
+338
+13
+1
+1
+sizmek
+5
+13
+other
+338
+unida
+358
+lista de campañas únicas:
+['KTBO_2020_BRA_KELLOGGS_TRINK_SEASONAL_GREENCITY_FACEBOOK_INSTAGRAM_AWARENESS_CPM_LUNCH', 'MCMMIA_2021_SLV_Kelloggs_Corporate Promotions_Seasonal_Google_Youtube_Back to School_Affinity Audiences_CPV_Family Breakfast_ENE_L14', 'MCMCO_2020_COL_KELLOGGS_FROOTLOOPS_SEASONAL_FROOTLOOPSJUMBO_SIZMEK_FAMILYBREAKFAST_CPM-XAXIS-DISPLAY', 'MCMMIA_2021_CHL_Kelloggs_Masterbrand_Seasonal_DespiertaMuchoMas_Sizmek_BreakfastforOne_CPM-Xaxis-ScrollReactive', 'MCMMIA_2020_MEX_Kelloggs_Pringles_Seasonal_AlwaysOn_Sizmek_EveningMe_CPM-Xaxis-Video', 'MCMMX_2020_MEX_KELLOGGS_SPECIALK_SEASONAL_ORIGINAL_SIZMEK_BREAKFASTFORONE_CPC-XAXIS-STANDARDBANNERS', 'MCMPR_2020_CRI_KELLOGGS_CORPORATEPROMOTIONS_SEASONAL_CRAYOLA_SIZMEK_FAMILYBREAKFAST_CPM-XAXIS-DISPLAY', 'M', 'K', 'N', 'B', 'R', 'P', 'T', 'A', 'G', 'E', 'H', 'F', 'O', 'L', 'C', 'X', 'I']
+24
+Mediaplan
+                                             Mediaplan  ... Delivery status
+0      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+1      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+2    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+3    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+4      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+..                                                 ...  ...             ...
+131  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+132  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+133  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+134  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+135                                                NaN  ...             NaN
+
+[136 rows x 10 columns]
+Mediafacts
+     Unnamed: 0  ...                                                181
+0             0  ...                                                NaN
+1             1  ...  KTBO_2021_BRA_Kelloggs_Sucrilhos_Seasonal_Goog...
+2             2  ...                                                NaN
+3             3  ...                                                NaN
+4             4  ...                                                NaN
+..          ...  ...                                                ...
+353         353  ...                                                NaN
+354         354  ...                                                NaN
+355         355  ...                                                NaN
+356         356  ...                                                NaN
+357         357  ...                                                NaN
+
+[358 rows x 183 columns]
+working on it
+Completed 26.9 KiB/26.9 KiB (178.9 KiB/s) with 1 file(s) remainingupload: ./unmatched.csv to s3://testingmidktbo/unmatched.csv      
+sftp>   cd uploads/test
+sftp> 
+sftp>   lcd Campaigns/facebook
+sftp>   get facebook/*
+Fetching /uploads/test/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv to 439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+Fetching /uploads/test/facebook/439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv to 439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekpr
+sftp>   get sizmekpr/*
+Fetching /uploads/test/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv to 439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+Fetching /uploads/test/sizmekpr/440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv to 440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmx
+sftp>   get sizmekmx/*
+Fetching /uploads/test/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv to 439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+Fetching /uploads/test/sizmekmx/439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv to 439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv
+Fetching /uploads/test/sizmekmx/440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv to 440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmi
+sftp>   get sizmekmi/*
+Fetching /uploads/test/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv to 439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+Fetching /uploads/test/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv to 439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+Fetching /uploads/test/sizmekmi/440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv to 440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekco
+sftp>   get sizmekco/*
+Fetching /uploads/test/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv to 439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+Fetching /uploads/test/sizmekco/439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv to 439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv
+Fetching /uploads/test/sizmekco/440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv to 440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/google
+sftp>   get google/*
+Fetching /uploads/test/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv to 439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+Fetching /uploads/test/google/439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv to 439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv
+Fetching /uploads/test/google/440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv to 440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/youtube
+sftp>   get youtube/*
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp> #  lcd mp
+sftp> #  get mp/*
+sftp> #  lcd ..
+sftp> #  rmdir mp
+sftp> #  mkdir mp
+sftp> 
+sftp> #  lcd twitter
+sftp> #  get twitter/*
+sftp> #  lcd ..
+sftp> #  rmdir twitter
+sftp> #  mkdir twitter
+sftp> 
+sftp> #  lcd othercampaigns
+sftp> #  get othercampaigns/*
+sftp> #  lcd ..
+sftp> #  rmdir othercampaigns
+sftp> #  mkdir othercampaigns
+sftp> 
+sftp> 
+sftp>   bye
+Completed 256.0 KiB/406.6 KiB (2.3 MiB/s) with 1 file(s) remainingCompleted 406.6 KiB/406.6 KiB (3.4 MiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx to Campaigns/othercampaigns/acumulado_other.xlsx
+Completed 14.2 KiB/14.2 KiB (310.8 KiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx to Campaigns/twitter/acumulado_twitter.xlsx
+Twitter length:
+13
+Other Campaigns length:
+338
+Campaigns/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+fb
+1
+Campaigns/facebook/439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv
+fb
+2
+Campaigns/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+go
+1
+Campaigns/google/439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv
+go
+2
+Campaigns/google/440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv
+go
+3
+Campaigns/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+si
+1
+Campaigns/sizmekco/439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv
+si
+2
+Campaigns/sizmekco/440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv
+si
+3
+Campaigns/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+si
+4
+Campaigns/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+si
+5
+Campaigns/sizmekmi/440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv
+si
+6
+Campaigns/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+si
+7
+Campaigns/sizmekmx/439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv
+si
+8
+Campaigns/sizmekmx/440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv
+si
+9
+Campaigns/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+si
+10
+Campaigns/sizmekpr/440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv
+si
+11
+2
+2
+sizmek uniques
+8
+otheruniques
+338
+13
+2
+3
+sizmek
+11
+13
+other
+338
+unida
+367
+Mediaplan
+                                             Mediaplan  ... Delivery status
+0      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+1      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+2    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+3    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+4      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+..                                                 ...  ...             ...
+131  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+132  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+133  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+134  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+135                                                NaN  ...             NaN
+
+[136 rows x 10 columns]
+Mediafacts
+     Unnamed: 0  ...                                                181
+0             0  ...                                                NaN
+1             1  ...  KTBO_2021_BRA_Kelloggs_Sucrilhos_Seasonal_Goog...
+2             2  ...                                                NaN
+3             3  ...                                                NaN
+4             4  ...                                                NaN
+..          ...  ...                                                ...
+353         353  ...                                                NaN
+354         354  ...                                                NaN
+355         355  ...                                                NaN
+356         356  ...                                                NaN
+357         357  ...                                                NaN
+
+[358 rows x 183 columns]
+working on it
+Completed 26.9 KiB/26.9 KiB (142.3 KiB/s) with 1 file(s) remainingupload: ./unmatched.csv to s3://testingmidktbo/unmatched.csv      
+sftp>   cd uploads/test
+sftp> 
+sftp>   lcd Campaigns/facebook
+sftp>   get facebook/*
+Fetching /uploads/test/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv to 439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+Fetching /uploads/test/facebook/439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv to 439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekpr
+sftp>   get sizmekpr/*
+Fetching /uploads/test/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv to 439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+Fetching /uploads/test/sizmekpr/440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv to 440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmx
+sftp>   get sizmekmx/*
+Fetching /uploads/test/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv to 439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+Fetching /uploads/test/sizmekmx/439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv to 439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv
+Fetching /uploads/test/sizmekmx/440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv to 440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekmi
+sftp>   get sizmekmi/*
+Fetching /uploads/test/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv to 439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+Fetching /uploads/test/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv to 439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+Fetching /uploads/test/sizmekmi/440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv to 440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp>   lcd Campaigns/sizmekco
+sftp>   get sizmekco/*
+Fetching /uploads/test/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv to 439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+Fetching /uploads/test/sizmekco/439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv to 439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv
+Fetching /uploads/test/sizmekco/440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv to 440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/google
+sftp>   get google/*
+Fetching /uploads/test/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv to 439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+Fetching /uploads/test/google/439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv to 439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv
+Fetching /uploads/test/google/440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv to 440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp>   lcd Campaigns/youtube
+sftp>   get youtube/*
+sftp>   lcd ..
+sftp>   lcd ..
+sftp> 
+sftp> 
+sftp> #  lcd mp
+sftp> #  get mp/*
+sftp> #  lcd ..
+sftp> #  rmdir mp
+sftp> #  mkdir mp
+sftp> 
+sftp> #  lcd twitter
+sftp> #  get twitter/*
+sftp> #  lcd ..
+sftp> #  rmdir twitter
+sftp> #  mkdir twitter
+sftp> 
+sftp> #  lcd othercampaigns
+sftp> #  get othercampaigns/*
+sftp> #  lcd ..
+sftp> #  rmdir othercampaigns
+sftp> #  mkdir othercampaigns
+sftp> 
+sftp> 
+sftp>   bye
+Completed 256.0 KiB/406.6 KiB (2.9 MiB/s) with 1 file(s) remainingCompleted 406.6 KiB/406.6 KiB (4.6 MiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_other/pautas_locales_acumulado_other.xlsx to Campaigns/othercampaigns/acumulado_other.xlsx
+Completed 14.2 KiB/14.2 KiB (266.9 KiB/s) with 1 file(s) remainingdownload: s3://othercampaigns/acumulado_twitter/pautas_locales_acumulado_twitter.xlsx to Campaigns/twitter/acumulado_twitter.xlsx
+Twitter length:
+13
+Other Campaigns length:
+338
+Campaigns/facebook/439834_ads_insights_ads_insights-6-20210101-87bfb4893fdc498f80d62d2b319d8c49.csv
+fb
+1
+Campaigns/facebook/439887_ads_insights_ads_insights-6-20210512-e3a1d67e052447d8a65a1875e36b7a1a.csv
+fb
+2
+Campaigns/google/439828_adwords_adwords-63-20210101-d54f5f9252034829b1f2428ef15aaac9.csv
+go
+1
+Campaigns/google/439971_adwords_adwords-63-20210512-0d288464286040078158188056935a2b.csv
+go
+2
+Campaigns/google/440425_adwords_adwords-63-20210512-e69f633aa7f44076b63902808e760869.csv
+go
+3
+Campaigns/sizmekco/439829_sizmek_sas_sizmek_sas-89-20210101-191ad56c6fff47f1876a48e365f6d589.csv
+si
+1
+Campaigns/sizmekco/439973_sizmek_sas_sizmek_sas-89-20210512-b8a67afbd6e3462fa663afe8339309e0.csv
+si
+2
+Campaigns/sizmekco/440519_sizmek_sas_sizmek_sas-89-20210512-b5cabc21f77f40df8f2fb57688ee6cbb.csv
+si
+3
+Campaigns/sizmekmi/439831_sizmek_sas_sizmek_sas-97-20210511-9556b76ff4c84bf081849f4275f6bcbc.csv
+si
+4
+Campaigns/sizmekmi/439832_sizmek_sas_sizmek_sas-97-20210101-7f931208a3254084b3f45c684bacc949.csv
+si
+5
+Campaigns/sizmekmi/440426_sizmek_sas_sizmek_sas-97-20210512-5299339de3ed427393a8f6bd45019ddf.csv
+si
+6
+Campaigns/sizmekmx/439830_sizmek_sas_sizmek_sas-98-20210101-5493622062544417b10965c415a6ed19.csv
+si
+7
+Campaigns/sizmekmx/439972_sizmek_sas_sizmek_sas-98-20210512-effea7cca5fe421d86b56f8eadf9afdf.csv
+si
+8
+Campaigns/sizmekmx/440518_sizmek_sas_sizmek_sas-98-20210512-89bd74de7ebe460697f0dbec47242a84.csv
+si
+9
+Campaigns/sizmekpr/439833_sizmek_sas_sizmek_sas-99-20210101-a5e7c97fe65145e2b26203e02b7d2154.csv
+si
+10
+Campaigns/sizmekpr/440341_sizmek_sas_sizmek_sas-99-20210512-c89df3000b9d4122a785dd0eae1f2033.csv
+si
+11
+2
+2
+sizmek uniques
+8
+otheruniques
+338
+13
+2
+3
+sizmek
+11
+13
+other
+338
+unida
+367
+Mediaplan
+                                             Mediaplan  ... Delivery status
+0      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+1      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+2    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+3    2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...           < 90%
+4      2021_ktbo_kube_Adverity_Mediaplan_Marzo-Caricam  ...           < 90%
+..                                                 ...  ...             ...
+131  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+132  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+133  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+134  2020_ktbo_kube_Adverity_Mediaplan_Octubre-Caricam  ...             NaN
+135                                                NaN  ...             NaN
+
+[136 rows x 10 columns]
+Mediafacts
+     Unnamed: 0  ...                                                181
+0             0  ...                                                NaN
+1             1  ...  KTBO_2021_BRA_Kelloggs_Sucrilhos_Seasonal_Goog...
+2             2  ...                                                NaN
+3             3  ...                                                NaN
+4             4  ...                                                NaN
+..          ...  ...                                                ...
+353         353  ...                                                NaN
+354         354  ...                                                NaN
+355         355  ...                                                NaN
+356         356  ...                                                NaN
+357         357  ...                                                NaN
+
+[358 rows x 183 columns]
+working on it
+Completed 26.9 KiB/26.9 KiB (139.4 KiB/s) with 1 file(s) remainingupload: ./unmatched.csv to s3://testingmidktbo/unmatched.csv      
