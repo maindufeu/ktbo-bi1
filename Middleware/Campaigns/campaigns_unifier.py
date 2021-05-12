@@ -49,7 +49,7 @@ for filename in glob.iglob(path, recursive=True):
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
                 go = pd.read_csv(filename, usecols = ['Campaign_duplicate'])
-                si.columns = ['Campaign Name']
+                go.columns = ['Campaign Name']
                 go_l = go['Campaign Name'].unique().tolist()
                 google.append(go_l)
                 go_df = pd.concat([go_df, si])
@@ -59,7 +59,7 @@ for filename in glob.iglob(path, recursive=True):
             elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
                 fb = pd.read_csv(filename, usecols = ['Temp Campaign Name'])
-                si.columns = ['Campaign Name']
+                fb.columns = ['Campaign Name']
                 fb = fb['Campaign Name'].unique().tolist()
                 facebook.append(df)
                 fb_df = pd.concat([fb_df, si])
