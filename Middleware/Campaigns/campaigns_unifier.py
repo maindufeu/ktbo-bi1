@@ -38,7 +38,7 @@ for filename in glob.iglob(path, recursive=True):
         if fnmatch.fnmatch(filename, pattern):
             if fnmatch.fnmatch(filename, '*sizmek*'):
                 print(filename)
-                si = pd.read_csv(filename, usecols = ['Campaign Name'], columns = ['Campaign Name'])
+                si = pd.read_csv(filename, usecols = ['Campaign Name'], names = ['Campaign Name'])
                 si_l = si['Campaign Name'].unique().tolist()
                 sizmek.append(si)
                 si_df = pd.concat([si_df, si])
@@ -47,7 +47,7 @@ for filename in glob.iglob(path, recursive=True):
 
             elif fnmatch.fnmatch(filename, '*google*'):
                 print(filename)
-                go = pd.read_csv(filename, usecols = ['Campaign_duplicate'], columns = ['Campaign Name'])
+                go = pd.read_csv(filename, usecols = ['Campaign_duplicate'], names = ['Campaign Name'])
                 go_l = go['Campaign Name'].unique().tolist()
                 google.append(go_l)
                 go_df = pd.concat([go_df, si])
@@ -56,7 +56,7 @@ for filename in glob.iglob(path, recursive=True):
 
             elif fnmatch.fnmatch(filename, '*facebook*'):
                 print(filename)
-                fb = pd.read_csv(filename, usecols = ['Temp Campaign Name'], columns = ['Campaign Name'])
+                fb = pd.read_csv(filename, usecols = ['Temp Campaign Name'], names = ['Campaign Name'])
                 fb = fb['Campaign Name'].unique().tolist()
                 facebook.append(df)
                 fb_df = pd.concat([fb_df, si])
