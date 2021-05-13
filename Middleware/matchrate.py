@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import csv
 import fnmatch
+import datetime
 
 path = 'Campaigns/**'
 pattern = '*.csv'
@@ -41,10 +42,8 @@ print('Mediafacts')
 print(mediafacts)
 
 mr = match.mp_match(mediaplans, mediafacts)
-print('mr')
 print(mr)
-mr = pd.DataFrame(mr)
-mr.to_csv('unmatched.csv')
+
 
 #file = open('unmatched.csv', 'w+', newline ='')
 #write = csv.writer(file)
