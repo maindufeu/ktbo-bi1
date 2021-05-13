@@ -34,5 +34,5 @@ def mp_match(mediaplan, mediafacts):
     else:
         print('el mediaplan contiene errores')
 
-    campaigns_matched = {campaigns_matched:mp_list}
+    campaigns_matched = [campaigns_matched,mp_list]
     return campaigns_matched
