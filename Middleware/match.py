@@ -17,7 +17,7 @@ def mp_match(mediaplan, mediafacts):
         if i not in mf_u:
             mediaplan_c = mediaplan[mediaplan['Campaign Name'] == i]['Mediaplan']
             print(f'falta {i} del plan de medios {mediaplan_c} en los datastreams')
-            mp_list.append()
+            mp_list.append(mediaplan_c)
             campaigns_matched.append(i)
         else:
             matched = matched + 1
