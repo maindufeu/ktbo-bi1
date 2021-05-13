@@ -1,9 +1,6 @@
 import datetime as dt
 import pandas as pd
-import requests
-import os
-import fnmatch
-import re
+
 
 """
 def mp_match(mediaplan, mediafacts):
@@ -38,8 +35,8 @@ _    print('working on it')
     campaigns_matched = [campaigns_matched,mp_list]
     return campaigns_matched
 """
-mediafacts=pd.read_csv(r"Campaigns\campaigns_unified.csv")
-mediaplan=pd.read_csv(r"Mediaplan\mp_processed\Adverity-export_Plan.csv")
+#mediafacts=pd.read_csv(r"Campaigns\campaigns_unified.csv")
+#mediaplan=pd.read_csv(r"Mediaplan\mp_processed\Adverity-export_Plan.csv")
 
 
 
