@@ -10,11 +10,14 @@ def mp_match(mediaplan, mediafacts):
     valid_status = 0
     matched = 0
     campaigns_matched = []
+    mp_list = []
     mp_u = mediaplan['Campaign Name'].unique()
     mf_u = mediafacts['Campaign Name'].unique()
     for i in mp_u:
         if i not in mf_u:
-            print(f'falta {i} en los datastreams')
+            mediaplan_c = mp_u[mp_u['Campaign Name'] == i]
+            print(f'falta {i} del plan de medios {mediaplan_c} en los datastreams')
+            mp_list.append()
             campaigns_matched.append(i)
         else:
             matched = matched + 1
