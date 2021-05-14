@@ -142,3 +142,22 @@ Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx to /uploads/media
 Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx
 Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx
 sftp>    bye
+sftp>    cd uploads/mediaplan
+sftp>    lcd result
+sftp>    mput *.xlsx
+Uploading 0321_KTBO_MediaBuying_MediaPlanTaxonomy_WelcomeRuffles_Pringles (2).xlsx to /uploads/mediaplan/0321_KTBO_MediaBuying_MediaPlanTaxonomy_WelcomeRuffles_Pringles (2).xlsx
+Uploading 0421_KTBO_MediaBuying_MediaPlanTaxonomy_Sucrilhos_Launch.xlsx to /uploads/mediaplan/0421_KTBO_MediaBuying_MediaPlanTaxonomy_Sucrilhos_Launch.xlsx
+Uploading 2021.xlsx to /uploads/mediaplan/2021.xlsx
+Uploading 2021_ktbo_kube_Adverity-Mediaplan_Marzo-PromoXbox.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity-Mediaplan_Marzo-PromoXbox.xlsx
+Uploading 2021_ktbo_kube_Adverity-Mediaplan_Mayo-PromoXbox.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity-Mediaplan_Mayo-PromoXbox.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Caricam.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Abril-Miami.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Marzo-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Marzo-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Marzo-Mexico.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Marzo-Mexico.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Marzo-Miami.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Marzo-Miami.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Mayo-Caricam.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Mayo-Caricam.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Mayo-Colombia.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Mayo-Colombia.xlsx
+Uploading 2021_ktbo_kube_Adverity_Mediaplan_Mayo-Mexico.xlsx to /uploads/mediaplan/2021_ktbo_kube_Adverity_Mediaplan_Mayo-Mexico.xlsx
+Uploading 2021​_ktbo_kube_Adverity​_Mediaplan_Marzo-Caricam.xlsx to /uploads/mediaplan/2021​_ktbo_kube_Adverity​_Mediaplan_Marzo-Caricam.xlsx
+sftp>    bye
